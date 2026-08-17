@@ -292,4 +292,6 @@ Si el proyecto se retoma después de un tiempo, primero debemos:
 4. No asumir que el estado documentado sigue siendo el estado actual.
 5. Continuar desde el último punto comprobado.
 
----listo
+---
+
+---

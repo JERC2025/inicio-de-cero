@@ -865,3 +865,209 @@ sincronización
 Cada etapa cumple una función diferente.
 
 ---
+
+---
+
+## 21. git log: consultar el historial
+
+### ¿Qué es git log?
+
+`git log` es el comando que utilizamos para consultar el historial de commits de un repositorio.
+
+Comando utilizado:
+
+git log
+
+Git muestra los commits comenzando por el más reciente y avanzando hacia los más antiguos.
+
+### Información que muestra git log
+
+Cada commit puede mostrar:
+
+- Identificador del commit.
+- Autor.
+- Fecha.
+- Mensaje del commit.
+- Referencias como `HEAD`, `main` y `origin/main`.
+
+---
+
+## 22. Identificador del commit
+
+Cada commit tiene un identificador.
+
+Ejemplo:
+
+c021ff4d590e2263c289f2ac2096663d87d7537a
+
+Git también permite utilizar una versión corta:
+
+c021ff4
+
+### Hash
+
+El identificador completo de un commit es un hash generado por Git.
+
+El hash permite identificar un commit específico dentro del historial.
+
+En nuestro proyecto:
+
+Hash corto:
+
+c021ff4
+
+Hash completo:
+
+c021ff4d590e2263c289f2ac2096663d87d7537a
+
+---
+
+## 23. HEAD
+
+`HEAD` es una referencia que indica la posición actual dentro del historial de Git.
+
+En nuestro caso:
+
+HEAD -> main
+
+Esto significa que nuestra posición actual está en la rama `main`.
+
+Podemos imaginarlo así:
+
+HEAD
+↓
+main
+↓
+c021ff4
+↓
+5c4ce14
+↓
+e7f602b
+↓
+dfd0fb4
+
+### Idea clave
+
+HEAD indica dónde estamos actualmente dentro del historial.
+
+---
+
+## 24. Branch
+
+Una `branch` es una rama del historial de un proyecto.
+
+En nuestro proyecto utilizamos:
+
+main
+
+La rama permite desarrollar una línea de trabajo independiente dentro del historial.
+
+Más adelante aprenderemos a crear y utilizar otras ramas.
+
+Português:
+
+branch = ramo / ramificação
+
+---
+
+## 25. origin
+
+`origin` es el nombre que Git asigna normalmente al repositorio remoto principal.
+
+En nuestro proyecto:
+
+origin
+
+representa el repositorio remoto de GitHub.
+
+---
+
+## 26. origin/main
+
+`origin/main` representa la rama `main` del repositorio remoto identificado como `origin`.
+
+Actualmente nuestro historial muestra:
+
+(HEAD -> main, origin/main)
+
+Esto significa que:
+
+HEAD apunta a `main`.
+
+`main` y `origin/main` apuntan actualmente al mismo commit.
+
+Por lo tanto, nuestro repositorio local y el repositorio remoto están sincronizados.
+
+---
+
+## 27. Historial actual del proyecto
+
+Nuestro historial contiene actualmente cuatro commits:
+
+dfd0fb4
+Primer commit
+
+↓
+
+e7f602b
+Documenta la preparacion del entorno y conceptos iniciales de Git
+
+↓
+
+5c4ce14
+Documenta commit y git push
+
+↓
+
+c021ff4
+Actualiza estado del proyecto despues del primer ciclo Git
+
+El commit más reciente es:
+
+c021ff4
+
+---
+
+## 28. Control de versiones
+
+Git es un sistema de control de versiones.
+
+Esto significa que Git permite registrar la evolución de un proyecto a través del tiempo.
+
+No solamente conserva el estado actual de los archivos.
+
+También conserva los diferentes puntos registrados mediante commits.
+
+### Idea clave
+
+Proyecto
+↓
+Cambio
+↓
+Commit
+↓
+Nuevo estado
+↓
+Cambio
+↓
+Commit
+↓
+Nuevo estado
+
+De esta manera podemos consultar cómo evolucionó el proyecto.
+
+---
+
+## 29. Conceptos aprendidos con git log
+
+- `git log`: consulta el historial de commits.
+- `commit`: registro de cambios.
+- `hash`: identificador de un commit.
+- `HEAD`: posición actual dentro del historial.
+- `branch`: rama del historial.
+- `main`: rama principal que estamos utilizando.
+- `origin`: nombre del repositorio remoto.
+- `origin/main`: rama `main` del repositorio remoto.
+- `control de versiones`: sistema para registrar y consultar la evolución de un proyecto.
+
+---
