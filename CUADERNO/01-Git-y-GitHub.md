@@ -1071,3 +1071,290 @@ De esta manera podemos consultar cómo evolucionó el proyecto.
 - `control de versiones`: sistema para registrar y consultar la evolución de un proyecto.
 
 ---
+
+---
+
+## 30. git log --oneline
+
+### ¿Qué es git log --oneline?
+
+`git log --oneline` es una versión resumida de `git log`.
+
+Muestra cada commit en una sola línea, haciendo que el historial sea más fácil de leer.
+
+Comando:
+
+git log --oneline
+
+Resultado obtenido en nuestro proyecto:
+
+ddf8f32 (HEAD -> main, origin/main) Documenta historial y conceptos de Git
+c021ff4 Actualiza estado del proyecto despues del primer ciclo Git
+5c4ce14 Documenta commit y git push
+e7f602b Documenta la preparacion del entorno y conceptos iniciales de Git
+dfd0fb4 Primer commit
+
+---
+
+## 31. ¿Cómo leer una línea de git log --oneline?
+
+Una línea normalmente tiene esta estructura:
+
+HASH + MENSAJE DEL COMMIT
+
+Por ejemplo:
+
+ddf8f32 Documenta historial y conceptos de Git
+
+### Hash
+
+`ddf8f32` es el identificador corto del commit.
+
+### Mensaje
+
+`Documenta historial y conceptos de Git` es el mensaje que describe lo que registramos en ese commit.
+
+Por lo tanto:
+
+ddf8f32
+↓
+identificador del commit
+
+Documenta historial y conceptos de Git
+↓
+mensaje del commit
+
+---
+
+## 32. Diferencia entre git log y git log --oneline
+
+### git log
+
+Muestra información detallada de cada commit.
+
+Puede mostrar:
+
+- hash completo;
+- autor;
+- fecha;
+- mensaje;
+- referencias.
+
+### git log --oneline
+
+Muestra una versión resumida:
+
+- hash corto;
+- mensaje del commit;
+- referencias cuando corresponda.
+
+### Idea clave
+
+`git log`
+
+= historial detallado
+
+`git log --oneline`
+
+= historial resumido
+
+---
+
+## 33. ¿Qué significa --oneline?
+
+`--oneline` es una opción que modifica la forma en que Git muestra el historial.
+
+Una opción es un parámetro adicional que cambia el comportamiento o la presentación de un comando.
+
+En este caso:
+
+`--oneline`
+
+le indica a Git que muestre cada commit resumido en una sola línea.
+
+Português:
+
+opción = opção
+
+---
+
+## 34. Leer las referencias de un commit
+
+En nuestro resultado aparece:
+
+ddf8f32 (HEAD -> main, origin/main)
+
+Esto contiene varias referencias.
+
+### HEAD
+
+Indica nuestra posición actual dentro del historial.
+
+### main
+
+Es la rama local en la que estamos trabajando.
+
+### origin/main
+
+Es la rama `main` del repositorio remoto identificado como `origin`.
+
+Por lo tanto:
+
+ddf8f32 (HEAD -> main, origin/main)
+
+significa que:
+
+- `HEAD` está en `main`.
+- `main` está apuntando al commit `ddf8f32`.
+- `origin/main` también está apuntando al commit `ddf8f32`.
+
+Esto indica que nuestro repositorio local y el remoto están sincronizados en ese commit.
+
+---
+
+## 35. Historial resumido actual
+
+Nuestro historial actual es:
+
+ddf8f32
+Documenta historial y conceptos de Git
+
+↓
+
+c021ff4
+Actualiza estado del proyecto despues del primer ciclo Git
+
+↓
+
+5c4ce14
+Documenta commit y git push
+
+↓
+
+e7f602b
+Documenta la preparacion del entorno y conceptos iniciales de Git
+
+↓
+
+dfd0fb4
+Primer commit
+
+El commit que está arriba es el más reciente.
+
+---
+
+## 36. ¿Por qué es útil git log --oneline?
+
+Cuando un proyecto tiene muchos commits, `git log` puede producir una gran cantidad de información.
+
+`git log --oneline` permite obtener rápidamente una visión general del historial.
+
+Por ejemplo:
+
+git log --oneline
+
+permite responder rápidamente:
+
+- ¿Cuántos commits tengo?
+- ¿Cuál es el último commit?
+- ¿Cuál es su identificador?
+- ¿Qué cambios registré anteriormente?
+- ¿Cuál es el orden de los commits?
+
+---
+
+## 37. Conceptos aprendidos
+
+### Historial
+
+Conjunto de commits que representan la evolución de un proyecto.
+
+Português:
+
+historial = histórico
+
+### Opción
+
+Parámetro que modifica el comportamiento o la presentación de un comando.
+
+Português:
+
+opción = opção
+
+### Resumen
+
+Representación más corta de una información.
+
+Português:
+
+resumen = resumo
+
+### Identificador
+
+Valor que permite reconocer o distinguir algo.
+
+Português:
+
+identificador = identificador
+
+### Referencia
+
+Elemento que señala o apunta hacia otro elemento.
+
+Português:
+
+referencia = referência
+
+---
+
+## 38. Comandos aprendidos hasta este punto
+
+### Consultar el estado
+
+git status
+
+### Preparar cambios
+
+git add .
+
+### Crear un commit
+
+git commit -m "mensaje"
+
+### Enviar commits a GitHub
+
+git push
+
+### Consultar historial detallado
+
+git log
+
+### Consultar historial resumido
+
+git log --oneline
+
+---
+
+## Idea clave
+
+Hasta este momento podemos pensar en Git como una secuencia:
+
+Modificar
+↓
+Guardar
+↓
+Consultar estado
+↓
+Preparar
+↓
+Registrar
+↓
+Consultar historial
+↓
+Enviar a GitHub
+
+Los comandos no hacen lo mismo.
+
+Cada uno representa una etapa diferente del control de versiones.
+
+---
