@@ -1358,3 +1358,141 @@ Los comandos no hacen lo mismo.
 Cada uno representa una etapa diferente del control de versiones.
 
 ---
+
+---
+
+## 39. Repositorio local y repositorio remoto
+
+Para entender Git correctamente debemos diferenciar dos lugares donde existe nuestro proyecto.
+
+## Repositorio local
+
+El repositorio local es la copia del proyecto que existe en nuestra computadora.
+
+En nuestro caso:
+
+Mac
+↓
+Carpeta inicio-de-cero
+↓
+Git local
+
+Aquí ocurren acciones como:
+
+- modificar archivos;
+- usar `git add`;
+- crear commits con `git commit`;
+- consultar el historial con `git log`.
+
+Los commits creados con `git commit` existen inicialmente solamente en nuestro repositorio local.
+
+---
+
+## Repositorio remoto
+
+El repositorio remoto es una copia del proyecto almacenada en un servidor externo.
+
+En nuestro caso:
+
+GitHub
+
+El repositorio remoto permite:
+
+- tener una copia de seguridad;
+- trabajar desde diferentes dispositivos;
+- compartir el proyecto;
+- colaborar con otras personas.
+
+---
+
+## Diferencia entre commit y push
+
+### git commit
+
+`git commit` guarda los cambios en el historial del repositorio local.
+
+Ejemplo:
+
+Mac:
+
+e5acded
+↓
+Commit creado localmente
+
+Todavía no está en GitHub.
+
+---
+
+### git push
+
+`git push` envía los commits del repositorio local hacia el repositorio remoto.
+
+Ejemplo:
+
+Mac
+↓
+git push
+↓
+GitHub
+
+Después del push:
+
+Repositorio local = repositorio remoto
+
+---
+
+## Flujo completo aprendido
+
+Modificar archivo
+
+↓
+
+git add .
+
+Prepara los cambios en la staging area.
+
+↓
+
+git commit
+
+Crea un punto de guardado en el historial local.
+
+↓
+
+git push
+
+Envía ese historial hacia GitHub.
+
+---
+
+## Conceptos importantes
+
+### Repositorio local
+
+Lugar donde Git guarda el historial del proyecto en nuestra computadora.
+
+Português:
+
+repositório local
+
+### Repositorio remoto
+
+Lugar externo donde se almacena una copia del repositorio, por ejemplo GitHub.
+
+Português:
+
+repositório remoto
+
+### Sincronizar
+
+Hacer que dos versiones tengan el mismo estado.
+
+En nuestro caso:
+
+Mac = GitHub
+
+Português:
+
+sincronizar = sincronizar
+
+---
