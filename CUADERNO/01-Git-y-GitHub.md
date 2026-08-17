@@ -425,3 +425,168 @@ Historial local
 git push
 ↓
 GitHub
+---
+
+## 9. git commit y el historial local
+
+### ¿Qué es un commit?
+
+Un commit es un registro de un conjunto de cambios dentro del historial de Git.
+
+Podemos imaginarlo como una fotografía del estado del proyecto en un momento determinado.
+
+### Comando utilizado
+
+git commit -m "Documenta la preparacion del entorno y conceptos iniciales de Git"
+
+### ¿Qué significa cada parte?
+
+- git: ejecuta Git.
+- commit: crea un registro en el historial.
+- -m: indica que vamos a proporcionar un mensaje.
+- "Documenta...": mensaje que describe los cambios registrados.
+
+### Resultado obtenido
+
+Nuestro commit fue creado correctamente:
+
+[main e7f602b] Documenta la preparacion del entorno y conceptos iniciales de Git
+
+El identificador corto del commit es:
+
+e7f602b
+
+### Concepto importante: identificador del commit
+
+Cada commit recibe un identificador único.
+
+Git utiliza este identificador para distinguir un commit de los demás registros del historial.
+
+En nuestro caso, el identificador corto es:
+
+e7f602b
+
+---
+
+## 10. Repositorio local y repositorio remoto
+
+Después de crear el commit comprobamos el estado con:
+
+git status
+
+Obtuvimos:
+
+Your branch is ahead of 'origin/main' by 1 commit.
+
+### ¿Qué significa "ahead"?
+
+Ahead significa que nuestro repositorio local está adelantado respecto al repositorio remoto.
+
+En nuestro caso significa:
+
+El repositorio local tiene 1 commit que todavía no ha sido enviado a GitHub.
+
+### Situación actual
+
+Mac:
+1 commit nuevo
+↓
+GitHub:
+todavía no tiene ese commit
+
+Por lo tanto:
+
+Repositorio local ≠ repositorio remoto
+
+en este momento.
+
+---
+
+## 11. ¿Qué significa "working tree clean"?
+
+También obtuvimos:
+
+nothing to commit, working tree clean
+
+Esto significa que actualmente no existen cambios pendientes en nuestros archivos de trabajo.
+
+### Conceptos importantes
+
+- Working tree: conjunto de archivos del proyecto sobre los que estamos trabajando actualmente.
+- Clean: limpio, sin cambios pendientes.
+- Ahead: adelantado respecto al repositorio remoto.
+
+### Idea clave
+
+Tener el working tree limpio NO significa necesariamente que GitHub esté actualizado.
+
+En nuestro caso:
+
+Working tree:
+limpio.
+
+Repositorio local:
+contiene 1 commit nuevo.
+
+GitHub:
+todavía no contiene ese commit.
+
+---
+
+## 12. git push
+
+### Concepto
+
+git push es el comando utilizado para enviar nuestros commits desde el repositorio local hacia el repositorio remoto.
+
+En nuestro proyecto, el repositorio remoto está en GitHub.
+
+### Flujo
+
+Archivo modificado
+↓
+Guardar con ⌘ + S
+↓
+git add .
+↓
+Staging area
+↓
+git commit
+↓
+Historial local
+↓
+git push
+↓
+Repositorio remoto en GitHub
+
+### Importante
+
+git commit y git push son operaciones diferentes.
+
+git commit:
+
+Registra los cambios en nuestro repositorio local.
+
+git push:
+
+Envía esos commits al repositorio remoto.
+
+### Situación actual
+
+Nuestro commit:
+
+e7f602b
+
+ya existe en el repositorio local.
+
+Todavía debemos utilizar:
+
+git push
+
+para enviarlo a GitHub.
+
+### Regla
+
+Antes de ejecutar git push debemos entender que estamos enviando nuestros commits locales al repositorio remoto.
+
+---
