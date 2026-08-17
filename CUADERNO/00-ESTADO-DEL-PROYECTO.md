@@ -400,3 +400,82 @@ GitHub
 
 ```bash
 git status
+
+---
+
+# Cierre de etapa: Fundamentos de Git y GitHub
+
+## Estado alcanzado
+
+Se completó correctamente la primera etapa del proyecto relacionada con Git y GitHub.
+
+Conceptos aprendidos:
+
+- Repositorio local.
+- Repositorio remoto.
+- GitHub como servidor remoto.
+- Estados de archivos en Git.
+- Staging area.
+- Commit.
+- Push.
+- Historial de commits.
+- Hash de commits.
+- HEAD.
+- main.
+- origin/main.
+
+## Flujo de trabajo dominado
+
+El flujo principal aprendido es:
+
+Modificar archivos
+
+↓
+
+git status
+
+↓
+
+git add .
+
+↓
+
+git commit -m "mensaje"
+
+↓
+
+git push
+
+↓
+
+Repositorio local sincronizado con GitHub
+
+## Último punto confirmado
+
+Último commit:
+
+c70a197
+
+Mensaje:
+
+Actualiza estado del proyecto despues de aprender Git
+
+Estado:
+
+Local = GitHub
+
+Working tree clean
+
+## Próxima etapa
+
+Aprendizaje de ramas (branches).
+
+Objetivos:
+
+- Crear ramas.
+- Cambiar entre ramas.
+- Entender la relación entre main y otras ramas.
+- Fusionar cambios mediante merge.
+- Aplicar un flujo de trabajo más cercano a proyectos profesionales.
+
+---
