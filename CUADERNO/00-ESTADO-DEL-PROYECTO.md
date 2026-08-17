@@ -295,3 +295,108 @@ Si el proyecto se retoma después de un tiempo, primero debemos:
 ---
 
 ---
+---
+
+# Estado del proyecto después del aprendizaje inicial de Git
+
+Fecha de actualización:
+
+Agosto 2026
+
+## Punto actual del proyecto
+
+El proyecto `inicio-de-cero` tiene configurado correctamente:
+
+- Git local.
+- Repositorio remoto en GitHub.
+- Conexión mediante SSH.
+- VS Code como editor.
+- Sistema de documentación mediante la carpeta `CUADERNO`.
+
+El repositorio se encuentra sincronizado entre la computadora local y GitHub.
+
+Estado confirmado:
+
+Local = GitHub
+
+---
+
+# Conceptos de Git aprendidos
+
+Hasta este punto se comprendieron los siguientes conceptos:
+
+## Repositorio
+
+Un repositorio es un espacio donde Git almacena el historial y seguimiento de un proyecto.
+
+Português:
+
+repositório = repositório
+
+---
+
+## Repositorio local
+
+Es la copia del proyecto que existe en nuestra computadora.
+
+Aquí se realizan acciones como:
+
+- modificar archivos;
+- crear commits;
+- consultar historial.
+
+---
+
+## Repositorio remoto
+
+Es una copia del repositorio almacenada en un servidor externo.
+
+En nuestro caso:
+
+GitHub
+
+---
+
+## Commit
+
+Un commit es un punto de guardado dentro del historial de Git.
+
+Cada commit tiene:
+
+- identificador único (hash);
+- fecha;
+- autor;
+- mensaje.
+
+Último commit registrado:
+
+14d1274
+
+Mensaje:
+
+Documenta repositorio local y remoto
+
+---
+
+## Push
+
+`git push` envía los commits del repositorio local hacia el repositorio remoto.
+
+Flujo:
+
+Mac
+↓
+git commit
+↓
+git push
+↓
+GitHub
+
+---
+
+# Comandos dominados hasta ahora
+
+## Consultar estado
+
+```bash
+git status
