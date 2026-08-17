@@ -590,3 +590,278 @@ para enviarlo a GitHub.
 Antes de ejecutar git push debemos entender que estamos enviando nuestros commits locales al repositorio remoto.
 
 ---
+---
+
+## 13. git push y sincronización con GitHub
+
+### ¿Qué es git push?
+
+`git push` es el comando que utilizamos para enviar los commits que existen en nuestro repositorio local hacia el repositorio remoto.
+
+En nuestro proyecto, el repositorio remoto está alojado en GitHub.
+
+Comando utilizado:
+
+git push
+
+### Resultado obtenido
+
+El comando terminó correctamente y mostró:
+
+main -> main
+
+Esto significa que nuestra rama local `main` fue enviada correctamente hacia la rama `main` del repositorio remoto.
+
+---
+
+## 14. ¿Qué significa origin/main?
+
+Anteriormente Git mostró:
+
+Your branch is ahead of 'origin/main' by 1 commit.
+
+Y después de utilizar `git push` mostró:
+
+Your branch is up to date with 'origin/main'.
+
+### origin
+
+`origin` es el nombre que Git utiliza para identificar nuestro repositorio remoto principal.
+
+### main
+
+`main` es la rama principal que estamos utilizando.
+
+Por lo tanto:
+
+`origin/main`
+
+significa:
+
+La rama `main` del repositorio remoto identificado como `origin`.
+
+---
+
+## 15. ¿Qué significa "up to date"?
+
+`up to date` significa que está actualizado.
+
+Cuando Git muestra:
+
+Your branch is up to date with 'origin/main'.
+
+significa que nuestra rama local `main` y la rama remota `origin/main` están sincronizadas.
+
+### Antes del push
+
+Nuestro estado era:
+
+Repositorio local:
+2 commits nuevos
+
+GitHub:
+todavía no tenía esos commits
+
+Por eso Git indicaba que nuestra rama estaba:
+
+ahead
+
+### Después del push
+
+Nuestro estado pasó a ser:
+
+Repositorio local:
+2 commits
+
+GitHub:
+2 commits
+
+Por lo tanto:
+
+Local = Remoto
+
+Y Git mostró:
+
+up to date
+
+---
+
+## 16. ¿Qué significa "working tree clean"?
+
+Después del `git push` ejecutamos:
+
+git status
+
+Y obtuvimos:
+
+nothing to commit, working tree clean
+
+### Significado
+
+`working tree clean` significa que no existen cambios pendientes en los archivos que Git deba registrar.
+
+No hay:
+
+- archivos modificados sin preparar;
+- archivos preparados sin commit;
+- archivos nuevos sin seguimiento.
+
+Nuestro proyecto está limpio.
+
+### Importante
+
+`working tree clean` y `up to date` son conceptos diferentes.
+
+`working tree clean`:
+
+Nuestro proyecto local no tiene cambios pendientes.
+
+`up to date`:
+
+Nuestro repositorio local está sincronizado con el repositorio remoto.
+
+Podemos tener uno sin el otro.
+
+---
+
+## 17. Flujo completo que hemos aprendido
+
+Hasta este momento hemos completado el ciclo básico de Git y GitHub:
+
+Modificar archivo
+↓
+Guardar con ⌘ + S
+↓
+Git detecta el cambio
+↓
+git add .
+↓
+Staging area
+↓
+git commit
+↓
+Historial local
+↓
+git push
+↓
+Repositorio remoto en GitHub
+↓
+git status
+↓
+Comprobar sincronización
+
+---
+
+## 18. Diferencia entre las operaciones
+
+### ⌘ + S
+
+Guarda el archivo en nuestro computador.
+
+### git status
+
+Nos informa sobre el estado actual del repositorio.
+
+### git add .
+
+Prepara los cambios para el próximo commit.
+
+El punto `.` representa el directorio actual y sus subdirectorios.
+
+### git commit
+
+Registra los cambios preparados en el historial local.
+
+### git push
+
+Envía los commits locales al repositorio remoto.
+
+---
+
+## 19. Conceptos importantes aprendidos
+
+### Local
+
+Algo que se encuentra en nuestro propio computador.
+
+Português: `local`
+
+### Remoto
+
+Algo que se encuentra fuera de nuestro computador y al que accedemos mediante una red.
+
+Português: `remoto`
+
+### Sincronizado
+
+Cuando dos versiones de información están actualizadas y coinciden respecto a los cambios registrados.
+
+Português: `sincronizado`
+
+### Ahead
+
+Indica que nuestro repositorio local tiene commits que todavía no existen en el repositorio remoto.
+
+Português: `à frente` / `adiantado`
+
+### Up to date
+
+Significa que está actualizado.
+
+Português: `atualizado`
+
+### Working tree
+
+Representa los archivos actuales sobre los que estamos trabajando.
+
+Português: `árvore de trabalho`
+
+### Clean
+
+Significa que no existen cambios pendientes.
+
+Português: `limpo`
+
+---
+
+## 20. Punto de control
+
+Hemos completado correctamente nuestro primer ciclo completo de Git y GitHub:
+
+git add .
+↓
+git commit
+↓
+git push
+
+Y comprobamos posteriormente:
+
+git status
+
+Resultado:
+
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Esto confirma que el repositorio local y el repositorio remoto están sincronizados.
+
+---
+
+## Idea clave
+
+Git no es simplemente una herramienta para "guardar archivos".
+
+Git permite controlar la evolución de un proyecto mediante un flujo:
+
+cambios
+↓
+preparación
+↓
+registro
+↓
+sincronización
+
+Cada etapa cumple una función diferente.
+
+---

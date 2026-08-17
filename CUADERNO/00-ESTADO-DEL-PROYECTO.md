@@ -128,3 +128,168 @@ El objetivo es construir conocimiento, no solamente completar instalaciones.
 5. Instalar y comprender herramientas de inteligencia artificial.
 6. Trabajar con LLM locales.
 7. Explorar OpenClaw y automatización.
+
+
+---
+
+# CHECKPOINT 01 — Git y GitHub
+
+## Estado
+
+Completamos correctamente el primer ciclo completo de Git y GitHub.
+
+### Flujo aprendido
+
+Modificar archivo
+↓
+⌘ + S
+↓
+git status
+↓
+git add .
+↓
+Staging area
+↓
+git commit
+↓
+Historial local
+↓
+git push
+↓
+GitHub
+↓
+git status
+↓
+Comprobar sincronización
+
+---
+
+## Commits realizados
+
+### Primer commit
+
+Identificador:
+
+e7f602b
+
+Mensaje:
+
+Documenta la preparacion del entorno y conceptos iniciales de Git
+
+Este commit registró la preparación inicial del entorno y la documentación creada hasta ese momento.
+
+### Segundo commit
+
+Identificador:
+
+5c4ce14
+
+Mensaje:
+
+Documenta commit y git push
+
+Este commit registró la documentación relacionada con `git commit`, `git push` y el estado del repositorio.
+
+---
+
+## Estado de GitHub
+
+Después de ejecutar:
+
+git push
+
+comprobamos:
+
+git status
+
+Resultado:
+
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Esto confirma que:
+
+- El repositorio local está sincronizado con GitHub.
+- No existen cambios pendientes.
+- Los commits realizados localmente fueron enviados al repositorio remoto.
+
+---
+
+## Conceptos aprendidos
+
+Hasta este checkpoint comprendemos los conceptos básicos de:
+
+- Git.
+- GitHub.
+- Repositorio local.
+- Repositorio remoto.
+- Branch.
+- main.
+- origin.
+- origin/main.
+- Modified.
+- Untracked.
+- Staged.
+- Unstaged.
+- Staging area.
+- Commit.
+- Mensaje de commit.
+- Identificador de commit.
+- Git push.
+- Git status.
+- Ahead.
+- Up to date.
+- Working tree.
+- Working tree clean.
+
+---
+
+## Comandos aprendidos
+
+git --version
+
+git config --global --list
+
+cd ~/inicio-de-cero
+
+pwd
+
+git status
+
+git add .
+
+git commit -m "mensaje"
+
+git push
+
+---
+
+## Próximo objetivo
+
+Continuar con el aprendizaje de Git y GitHub antes de pasar a SSH y posteriormente a la preparación del entorno para trabajar con Python, LLM locales y OpenClaw.
+
+El siguiente objetivo de aprendizaje será profundizar en:
+
+- git log
+- historial de commits
+- cómo consultar los cambios registrados;
+- cómo identificar commits;
+- cómo comparar estados del proyecto;
+- cómo recuperar información del historial.
+
+---
+
+# Regla de continuidad
+
+Este checkpoint representa un punto estable del proyecto.
+
+Si el proyecto se retoma después de un tiempo, primero debemos:
+
+1. Leer este archivo.
+2. Leer `00-CONTEXTO-PARA-LLM.md`.
+3. Comprobar el estado real del repositorio con `git status`.
+4. No asumir que el estado documentado sigue siendo el estado actual.
+5. Continuar desde el último punto comprobado.
+
+---listo
