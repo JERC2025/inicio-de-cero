@@ -1496,3 +1496,14 @@ Português:
 sincronizar = sincronizar
 
 ---
+---
+
+## Prueba de trabajo con branches
+
+Esta sección fue creada en la rama:
+
+prueba-branches
+
+El objetivo es comprobar que los cambios realizados en una rama pueden mantenerse separados de la rama principal `main`.
+
+---x
