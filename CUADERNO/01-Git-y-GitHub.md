@@ -1496,3 +1496,84 @@ Português:
 sincronizar = sincronizar
 
 ---
+---
+
+## 40. Branches (ramas) en Git
+
+Una branch es una línea independiente dentro del historial de Git.
+
+Una rama no crea una carpeta nueva.
+
+Una rama es una referencia que apunta a un punto específico del historial.
+
+---
+
+## Crear una rama
+
+Comando:
+
+git branch nombre-de-la-rama
+
+Ejemplo:
+
+git branch prueba-branches
+
+Esto crea una nueva rama llamada `prueba-branches`.
+
+Crear una rama no cambia automáticamente hacia ella.
+
+---
+
+## Cambiar de rama
+
+Comando:
+
+git switch nombre-de-la-rama
+
+Ejemplo:
+
+git switch prueba-branches
+
+Esto mueve la posición actual de trabajo hacia esa rama.
+
+---
+
+## Diferencia entre main y una rama de prueba
+
+En nuestro proyecto:
+
+main:
+
+d0315d3
+↓
+c70a197
+
+prueba-branches:
+
+5516534
+↓
+d0315d3
+↓
+c70a197
+
+La rama de prueba contiene un commit adicional que no existe en `main`.
+
+---
+
+## Idea clave
+
+Las ramas permiten trabajar con cambios nuevos sin modificar directamente la rama principal.
+
+Flujo profesional:
+
+main
+↓
+crear rama
+↓
+desarrollar cambios
+↓
+probar
+↓
+merge hacia main
+
+---
