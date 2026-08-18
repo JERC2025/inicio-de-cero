@@ -1496,7 +1496,7 @@ Português:
 sincronizar = sincronizar
 
 ---
----
+--
 
 ## 40. Branches (ramas) en Git
 
@@ -1577,3 +1577,10 @@ probar
 merge hacia main
 
 ---
+=======
+## Prueba de trabajo con branches
+
+Esta sección fue creada en la rama:
+
+prueba-branches
+
