@@ -1577,7 +1577,6 @@ probar
 merge hacia main
 
 ---
-=======
 ## Prueba de trabajo con branches
 
 Esta sección fue creada en la rama:
