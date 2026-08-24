@@ -1582,4 +1582,11 @@ merge hacia main
 Esta sección fue creada en la rama:
 
 prueba-branches
+---
+
+## Prueba de git fetch
+
+Esta sección fue agregada directamente desde GitHub para comprobar la diferencia entre repositorio remoto y local.
+
+---
 
