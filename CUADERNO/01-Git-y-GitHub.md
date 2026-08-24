@@ -1589,4 +1589,7 @@ prueba-branches
 Esta sección fue agregada directamente desde GitHub para comprobar la diferencia entre repositorio remoto y local.
 
 ---
+Prueba de git fetch
+
+Esta sección fue agregada directamente desde GitHub para comprobar la diferencia entre repositorio remoto y local.
 
