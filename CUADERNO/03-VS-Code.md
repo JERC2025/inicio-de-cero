@@ -45,3 +45,4 @@ Muestra herramientas como:
 VS Code es la herramienta que utilizamos para trabajar con los archivos.
 
 Git es la herramienta que utilizamos para controlar las versiones de esos archivos.
+Prueba de integración entre VS Code y Git
