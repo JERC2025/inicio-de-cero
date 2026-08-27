@@ -2,480 +2,341 @@
 
 ## Objetivo general
 
-Crear un entorno de desarrollo completo en nuestro Mac para aprender programación, inteligencia artificial, modelos de lenguaje (LLM), automatización y herramientas modernas de desarrollo.
+Crear progresivamente un entorno de desarrollo para aprender:
 
-El objetivo final es tener una base sólida para trabajar con herramientas como LLM locales y OpenClaw, entendiendo cada componente y no solamente instalándolo.
+- Programación.
+- Python.
+- Inteligencia artificial.
+- Ingeniería de software.
+- Redes y comunicación.
+- Modelos de lenguaje (LLM).
+- Automatización.
+- Herramientas modernas de desarrollo.
+
+El objetivo no es solamente instalar herramientas, sino comprender qué hacen, cómo funcionan y cómo utilizarlas para construir proyectos reales.
 
 ---
 
-# Información del entorno
+# Entorno actual
 
 ## Computador
 
-Equipo:
-Mac con Apple Silicon
+- Mac con Apple Silicon.
+- macOS.
 
-Sistema:
-macOS
+## Herramientas confirmadas
 
-## Herramientas principales
-
-- ChatGPT instalado en Mac.
+- Git instalado y funcionando.
 - Visual Studio Code instalado.
-- Terminal configurada.
-- Git instalado.
-- Repositorio conectado con GitHub.
+- Terminal funcionando.
+- Repositorio Git local funcionando.
+- Repositorio remoto conectado con GitHub.
+- Conexión entre el repositorio local y GitHub funcionando.
+- SSH configurado para el repositorio.
+- Carpeta `CUADERNO` utilizada para documentar el aprendizaje.
 
 ---
 
 # Estado actual del proyecto
 
-## Completado
+## Git y GitHub
 
-✅ Creación del proyecto `inicio-de-cero`.
+Se completó la etapa de fundamentos y se practicó un flujo básico de trabajo con Git.
 
-✅ Creación de la carpeta `CUADERNO`.
+Conceptos aprendidos:
 
-✅ Creación de documentos de aprendizaje:
-
-- 01-Git-y-GitHub.md
-- 02-SSH.md
-- 03-VS-Code.md
-
-✅ Instalación y comprobación de Git.
-
-✅ Configuración inicial de Git.
-
-✅ Comprobación del repositorio con:
-
-git status
-
-✅ Comprensión inicial de:
-
-- Git.
-- GitHub.
+- Repositorio.
 - Repositorio local.
 - Repositorio remoto.
+- GitHub.
+- `main`.
+- `origin`.
+- `origin/main`.
+- `HEAD`.
 - Commit.
-- Branch.
-- Origin.
-- Modified.
-- Untracked.
-
----
-
-# Punto actual
-
-Estamos trabajando en:
-
-## Aprendizaje de Git y GitHub
-
-Último paso completado:
-
-Paso 6 — Comprobar el estado del repositorio con:
-
-git status
-
----
-
-# Próximo paso
-
-Continuar aprendiendo:
-
-- git add
-- staging area
-- git commit
-- git log
-- git push
-- git pull
-
-Entender completamente el flujo:
-
-Archivo modificado
-↓
-git add
-↓
-commit
-↓
-push
-↓
-GitHub
-
----
-
-# Método de trabajo
-
-Cada herramienta que instalemos debe quedar documentada con:
-
-- Qué es.
-- Para qué sirve.
-- Cómo funciona.
-- Conceptos importantes.
-- Comandos utilizados.
-- Errores encontrados.
-- Soluciones aplicadas.
-
-El objetivo es construir conocimiento, no solamente completar instalaciones.
-
----
-
-# Próximas etapas del proyecto
-
-1. Dominar Git y GitHub.
-2. Aprender SSH.
-3. Configurar correctamente VS Code.
-4. Preparar entorno de desarrollo.
-5. Instalar y comprender herramientas de inteligencia artificial.
-6. Trabajar con LLM locales.
-7. Explorar OpenClaw y automatización.
-
-
----
-
-# CHECKPOINT 01 — Git y GitHub
-
-## Estado
-
-Completamos correctamente el primer ciclo completo de Git y GitHub.
-
-### Flujo aprendido
-
-Modificar archivo
-↓
-⌘ + S
-↓
-git status
-↓
-git add .
-↓
-Staging area
-↓
-git commit
-↓
-Historial local
-↓
-git push
-↓
-GitHub
-↓
-git status
-↓
-Comprobar sincronización
-
----
-
-## Commits realizados
-
-### Primer commit
-
-Identificador:
-
-e7f602b
-
-Mensaje:
-
-Documenta la preparacion del entorno y conceptos iniciales de Git
-
-Este commit registró la preparación inicial del entorno y la documentación creada hasta ese momento.
-
-### Segundo commit
-
-Identificador:
-
-5c4ce14
-
-Mensaje:
-
-Documenta commit y git push
-
-Este commit registró la documentación relacionada con `git commit`, `git push` y el estado del repositorio.
-
----
-
-## Estado de GitHub
-
-Después de ejecutar:
-
-git push
-
-comprobamos:
-
-git status
-
-Resultado:
-
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-
-Esto confirma que:
-
-- El repositorio local está sincronizado con GitHub.
-- No existen cambios pendientes.
-- Los commits realizados localmente fueron enviados al repositorio remoto.
-
----
-
-## Conceptos aprendidos
-
-Hasta este checkpoint comprendemos los conceptos básicos de:
-
-- Git.
-- GitHub.
-- Repositorio local.
-- Repositorio remoto.
-- Branch.
-- main.
-- origin.
-- origin/main.
+- Hash o identificador del commit.
+- Working tree.
+- Working tree clean.
 - Modified.
 - Untracked.
 - Staged.
 - Unstaged.
 - Staging area.
-- Commit.
-- Mensaje de commit.
-- Identificador de commit.
-- Git push.
-- Git status.
-- Ahead.
-- Up to date.
-- Working tree.
-- Working tree clean.
+- Branch.
+- `git switch`.
+- `git merge`.
+- Conflictos de merge.
+- `git fetch`.
+- `git pull`.
+- `git push`.
+- Estado `ahead`.
+- Estado `behind`.
+- Estado `up to date`.
+- Fast-forward.
 
 ---
 
-## Comandos aprendidos
+# Flujo básico aprendido
 
-git --version
+Cuando modificamos un archivo:
 
-git config --global --list
+Modificar archivo
 
-cd ~/inicio-de-cero
+↓
 
-pwd
+`git status`
 
-git status
+↓
 
-git add .
+`git add`
 
-git commit -m "mensaje"
+↓
 
-git push
+Staging area
+
+↓
+
+`git commit -m "mensaje"`
+
+↓
+
+Historial local
+
+↓
+
+`git push`
+
+↓
+
+GitHub
+
+↓
+
+`git status`
+
+↓
+
+Comprobar sincronización
 
 ---
 
-## Próximo objetivo
+# Branches
 
-Continuar con el aprendizaje de Git y GitHub antes de pasar a SSH y posteriormente a la preparación del entorno para trabajar con Python, LLM locales y OpenClaw.
+Se creó una rama de prueba llamada:
 
-El siguiente objetivo de aprendizaje será profundizar en:
+`prueba-branches`
 
-- git log
-- historial de commits
-- cómo consultar los cambios registrados;
-- cómo identificar commits;
-- cómo comparar estados del proyecto;
-- cómo recuperar información del historial.
+Se practicó:
+
+`git branch prueba-branches`
+
+para crear una rama.
+
+Se practicó:
+
+`git switch prueba-branches`
+
+para cambiar de rama.
+
+Se comprendió que una branch no es una carpeta nueva, sino una línea independiente dentro del historial de Git.
+
+---
+
+# Merge
+
+Se practicó la integración de una rama mediante:
+
+`git merge prueba-branches`
+
+La operación se realizó estando en `main`, por lo que los cambios de `prueba-branches` fueron integrados en `main`.
+
+Durante esta práctica apareció un conflicto en:
+
+`CUADERNO/01-Git-y-GitHub.md`
+
+El conflicto fue revisado y resuelto manualmente.
+
+Después se utilizó:
+
+`git add CUADERNO/01-Git-y-GitHub.md`
+
+y posteriormente un commit para concluir el merge.
+
+La rama de prueba fue eliminada después de completar la integración:
+
+`git branch -d prueba-branches`
+
+---
+
+# Conflictos
+
+Se aprendió que un conflicto no significa necesariamente que Git esté dañado.
+
+Un conflicto aparece cuando Git encuentra cambios que no puede combinar automáticamente.
+
+El proceso aprendido fue:
+
+Detectar conflicto
+
+↓
+
+Revisar el archivo
+
+↓
+
+Decidir qué contenido debe conservarse
+
+↓
+
+Eliminar las marcas de conflicto
+
+↓
+
+`git add`
+
+↓
+
+`git commit`
+
+---
+
+# Fetch y Pull
+
+También se practicó el trabajo entre el repositorio local y el remoto.
+
+## git fetch
+
+`git fetch`
+
+actualiza la información que el repositorio local tiene sobre el repositorio remoto.
+
+No mueve automáticamente nuestra rama `main`.
+
+Durante la práctica se comprobó que `origin/main` podía avanzar mientras `main` local permanecía en un commit anterior.
+
+## git pull
+
+`git pull`
+
+trae los cambios del repositorio remoto y actualiza la rama local.
+
+Durante la práctica:
+
+`main`
+
+estaba un commit detrás de:
+
+`origin/main`.
+
+Después de ejecutar `git pull`, la rama local avanzó mediante un `fast-forward`.
+
+---
+
+# Diferencia entre main y origin/main
+
+## main
+
+Es nuestra rama `main` local.
+
+## origin/main
+
+Es la referencia local que Git mantiene sobre la rama `main` del repositorio remoto.
+
+`origin` representa el repositorio remoto configurado para nuestro proyecto.
+
+Por lo tanto:
+
+`main` = rama local.
+
+`origin/main` = referencia de la rama `main` remota.
+
+---
+
+# Estado confirmado
+
+Último estado comprobado:
+
+`git status`
+
+Resultado:
+
+`On branch main`
+
+`Your branch is up to date with 'origin/main'.`
+
+`nothing to commit, working tree clean`
+
+Esto confirma que, en el momento de la última comprobación:
+
+- Estamos en `main`.
+- `main` está sincronizada con `origin/main`.
+- No existen cambios pendientes en el working tree.
+
+Último commit confirmado:
+
+`a012735`
+
+Mensaje:
+
+`Update 01-Git-y-GitHub.md`
+
+---
+
+# Documentación de Git
+
+El documento:
+
+`CUADERNO/01-Git-y-GitHub.md`
+
+contiene el aprendizaje realizado sobre Git y GitHub.
+
+Durante el aprendizaje se documentaron conceptos, comandos, pruebas con branches, merge, conflictos, `fetch` y `pull`.
+
+---
+
+# Método de trabajo aprendido
+
+A partir de ahora no debemos ejecutar comandos de Git automáticamente sin comprobar primero el estado.
+
+Regla:
+
+**NO ASUMIR → COMPROBAR → ACTUAR → VERIFICAR**
+
+En Git, el comando principal para conocer el estado actual es:
+
+`git status`
+
+---
+
+# Próximo paso
+
+La etapa de fundamentos de Git y GitHub ya está suficientemente desarrollada para continuar.
+
+El siguiente objetivo será comenzar con **SSH**, pero antes de avanzar se debe comprobar el estado real del repositorio y verificar que la documentación esté sincronizada con GitHub.
+
+Después comenzaremos la etapa:
+
+**SSH → VS Code → entorno de desarrollo → Python → herramientas de IA → LLM locales → automatización**
 
 ---
 
 # Regla de continuidad
 
-Este checkpoint representa un punto estable del proyecto.
+Cuando retomemos el proyecto:
 
-Si el proyecto se retoma después de un tiempo, primero debemos:
-
-1. Leer este archivo.
-2. Leer `00-CONTEXTO-PARA-LLM.md`.
-3. Comprobar el estado real del repositorio con `git status`.
-4. No asumir que el estado documentado sigue siendo el estado actual.
-5. Continuar desde el último punto comprobado.
-
----
-
----
----
-
-# Estado del proyecto después del aprendizaje inicial de Git
-
-Fecha de actualización:
-
-Agosto 2026
-
-## Punto actual del proyecto
-
-El proyecto `inicio-de-cero` tiene configurado correctamente:
-
-- Git local.
-- Repositorio remoto en GitHub.
-- Conexión mediante SSH.
-- VS Code como editor.
-- Sistema de documentación mediante la carpeta `CUADERNO`.
-
-El repositorio se encuentra sincronizado entre la computadora local y GitHub.
-
-Estado confirmado:
-
-Local = GitHub
+1. Leer `CUADERNO/00-ESTADO-DEL-PROYECTO.md`.
+2. Leer `CUADERNO/00-CONTEXTO-PARA-LLM.md` cuando sea necesario.
+3. Ejecutar `git status`.
+4. Comparar el estado real con este documento.
+5. No asumir que el estado documentado sigue siendo actual.
+6. Continuar únicamente desde el último punto confirmado.
 
 ---
 
-# Conceptos de Git aprendidos
+# Principio del proyecto
 
-Hasta este punto se comprendieron los siguientes conceptos:
+El objetivo no es únicamente terminar instalaciones.
 
-## Repositorio
+Cada etapa debe seguir el ciclo:
 
-Un repositorio es un espacio donde Git almacena el historial y seguimiento de un proyecto.
-
-Português:
-
-repositório = repositório
-
----
-
-## Repositorio local
-
-Es la copia del proyecto que existe en nuestra computadora.
-
-Aquí se realizan acciones como:
-
-- modificar archivos;
-- crear commits;
-- consultar historial.
-
----
-
-## Repositorio remoto
-
-Es una copia del repositorio almacenada en un servidor externo.
-
-En nuestro caso:
-
-GitHub
-
----
-
-## Commit
-
-Un commit es un punto de guardado dentro del historial de Git.
-
-Cada commit tiene:
-
-- identificador único (hash);
-- fecha;
-- autor;
-- mensaje.
-
-Último commit registrado:
-
-14d1274
-
-Mensaje:
-
-Documenta repositorio local y remoto
-
----
-
-## Push
-
-`git push` envía los commits del repositorio local hacia el repositorio remoto.
-
-Flujo:
-
-Mac
-↓
-git commit
-↓
-git push
-↓
-GitHub
-
----
-
-# Comandos dominados hasta ahora
-
-## Consultar estado
-
-```bash
-git status
-
----
-
-# Cierre de etapa: Fundamentos de Git y GitHub
-
-## Estado alcanzado
-
-Se completó correctamente la primera etapa del proyecto relacionada con Git y GitHub.
-
-Conceptos aprendidos:
-
-- Repositorio local.
-- Repositorio remoto.
-- GitHub como servidor remoto.
-- Estados de archivos en Git.
-- Staging area.
-- Commit.
-- Push.
-- Historial de commits.
-- Hash de commits.
-- HEAD.
-- main.
-- origin/main.
-
-## Flujo de trabajo dominado
-
-El flujo principal aprendido es:
-
-Modificar archivos
-
-↓
-
-git status
-
-↓
-
-git add .
-
-↓
-
-git commit -m "mensaje"
-
-↓
-
-git push
-
-↓
-
-Repositorio local sincronizado con GitHub
-
-## Último punto confirmado
-
-Último commit:
-
-c70a197
-
-Mensaje:
-
-Actualiza estado del proyecto despues de aprender Git
-
-Estado:
-
-Local = GitHub
-
-Working tree clean
-
-## Próxima etapa
-
-Aprendizaje de ramas (branches).
-
-Objetivos:
-
-- Crear ramas.
-- Cambiar entre ramas.
-- Entender la relación entre main y otras ramas.
-- Fusionar cambios mediante merge.
-- Aplicar un flujo de trabajo más cercano a proyectos profesionales.
-
----
+**CONSTRUIR → COMPROBAR → INVESTIGAR → COMPARAR → COMPRENDER → DOCUMENTAR → MEJORAR → CONTINUAR**
